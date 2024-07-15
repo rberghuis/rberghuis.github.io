@@ -3,7 +3,8 @@ title: "Sensitivity labels and Copilot for Microsoft 365"
 date: 2024-01-17
 ---
 
-![Image illustrating Microsoft Productivity Apps, Copilot and Purview Sensitivity Labels - © Robbert Berghuis](/assets/images//20240117-microsoftproductivityappscopilotandlabels.png)
+![Image illustrating Microsoft Productivity Apps, Copilot and Purview Sensitivity Labels - © Robbert Berghuis](/assets/images/20240117-microsoftproductivityappscopilotandlabels.png)
+<figcaption>Image illustrating Microsoft Productivity Apps, Copilot and Purview Sensitivity Labels - © Robbert Berghuis</figcaption>
 
 Many organizations are using Microsoft Purview Sensitivity labels to classify their unstructured data for quite a while now. Some organizations are also exploring Microsoft Copilot for Microsoft 365, but how do these two services work together? In this post I'm providing some of my own learnings on this topic from first-hand deployment experience and guidance on how to resolve some of the issues I've seen to date.
 
@@ -23,18 +24,17 @@ In comes Copilot for Microsoft 365 on which many people have blogged about, so l
 - **Copilot for Word** will cease to exist whenever the Microsoft Unified Labeling add-in is active for the end-user. Launching word in 'safe mode' will ensure the Copilot interface will launch as that disables the add-in. However, any attempts of activating the Microsoft Unified Labeling add-in will fully remove the Copilot for Word experience.
 - **Copilot for Excel** is visually present in the ribbon (only) but greyed out. Meaning the functionality isn't provided in the Desktop app. Similar to Word, when the Microsoft Unified Labeling add-in is not active, the functionality is working as expected.
 
-![An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images//20240117-excelvsexcelonline.png)
-An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis
+![An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images/20240117-excelvsexcelonline.png)
+<figcaption> An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis</figcaption>
 
 - **Copilot for PowerPoint** works! Whenever you're in need of transforming a Word-document into a presentation, the highest label of the source documents is also applied to the resulting PowerPoint deck. This is called label inheritance (more can be found on Microsoft Learn) and works, however it isn't reflected in the add-in bar. It is shown correctly in the Ribbon underneath the Sensitivity button and upon saving and re-opening the presentation, the label is also correctly reflected in the add-in bar. 
 
-![An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images//20240117-powerpoint.png)
-An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis
+![An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images/20240117-powerpoint.png)
+<figcaption>An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis</figcaption>
 
 I can't speak on behalf of Microsoft but can probably share that in my conversations with the Microsoft Product Group they've been strongly advising to transition to the built-in labeling client. If you need more information on the retirement of the Microsoft Unified Labeling add-in, I'd suggest to read the following [Microsoft Tech Community publication](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908).
 
 ## How to transition?
-
 Amongst the huge set of possibilities, I've found that using the Office Cloud Policy service best fits my needs to-date. The Office Cloud Policy service settings can be pushed based on the used License Group that you also use to enable the Copilot for Microsoft 365 licenses and these policies take precedence over settings pushed through Group Policy Objects.
 
 1. "Use the Sensitivity feature in Office to apply and view sensitivity labels" should be set to Enabled. This will enforce the use of the built-in sensitivity label feature.
