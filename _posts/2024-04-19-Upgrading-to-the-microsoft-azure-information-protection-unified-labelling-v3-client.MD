@@ -4,7 +4,8 @@ date: 2024-04-19
 ---
 
 ![Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis](/assets/images/20240419-shinynewsystem.png)
-<figcaption>Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis</figcaption>
+<center><figcaption>Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis</figcaption></center>
+
 
 In this short post, we’ll dive into the why and how of the upgrade to the V3 Unified Labeling client.
 
@@ -23,7 +24,8 @@ Migration steps are made available by Microsoft [here](https://learn.microsoft.c
 The below timeline is based on the well-known ring deployment principle and assumes the organization has 4 rings. It also uses an n+7 days principle I see across enterprises, based on the initial release of software in an attempt to avoid bugs.
 
 ![Release schedule visualization - © Robbert Berghuis](/assets/images/20240419-releaseschedule.png)
-<figcaption>Release schedule visualization - © Robbert Berghuis</figcaption>
+<center><figcaption>Release schedule visualization - © Robbert Berghuis</figcaption></center>
+
 
 ## Summary
 To wrap-up:
@@ -36,6 +38,8 @@ To wrap-up:
 
 ## Relevant reading materials
 The below is a non-exhaustive list of additional reading materials
-- [Retirement notification for the Azure Information Protection Unified Labeling add-in for Office | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908)
-- [Azure Information Protection and the Information Protection Modernization Journey | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070)
-- [Microsoft Purview Information Protection client - Release management and supportability | Microsoft Learn](https://learn.microsoft.com/en-us/purview/information-protection-client-relnotes)
+[Retirement notification for the Azure Information Protection Unified Labeling add-in for Office | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908)
+
+[Azure Information Protection and the Information Protection Modernization Journey | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070)
+
+[Microsoft Purview Information Protection client - Release management and supportability | Microsoft Learn](https://learn.microsoft.com/en-us/purview/information-protection-client-relnotes)
