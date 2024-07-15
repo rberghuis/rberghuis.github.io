@@ -36,7 +36,6 @@ Reading the applicable retention policies on object level requires knowledge on 
 
 Okay, you claim something does not work and now you are going to add additional work on my plate for what? In the spirit of "pictures or it didn't happen", here is an active example of the two mailboxes in scope of the earlier shown policies, notice something different? Both mailboxes are in-scope of the same Retention Compliance policies, but this is not reflected. 
 
-<< IMG >>
 ![Retention Compliance Policy not applied to the mailbox - © Robbert Berghuis](/assets/images/20240715-PowerShell-Policy-not-applied.png)
 <figcaption>Retention Compliance Policy not applied to the mailbox - © Robbert Berghuis</figcaption>
 
@@ -46,13 +45,11 @@ The trick of reading the retention policies is fetching them through the followi
 
 This gives you a JSON-formatted string which translates to a list of objects for which one the properties is a GUID. This GUID can be translated back to the Retention Compliance Policy and will obviously require some minor string modifications. 
 
-<< IMG >>
 ![Extracting the "Holds" through Mailbox Diagnostic Logs - © Robbert Berghuis](/assets/images/20240715-PowerShell-Extracting-Holds.png)
 <figcaption>Extracting the "Holds" through Mailbox Diagnostic Logs - © Robbert Berghuis</figcaption>
 
 For that mailbox in question, this part of the Mailbox Diagnostic Logs shows as empty as captured below. There can be many reasons for this, including replication time etc. However, if you are facing the same, I would advise you to raise a case at Microsoft Support to get this sorted.
 
-<< IMG >>
 ![No "Holds" applied based on the Mailbox Diagnostic Logs - © Robbert Berghuis](/assets/images/20240715-PowerShell-No-Holds-Applied.png)
 <figcaption>No "Holds" applied based on the Mailbox Diagnostic Logs - © Robbert Berghuis</figcaption>
 
