@@ -1,4 +1,4 @@
 ---
-title: Welcome to my personal blog
+title: Gibberish of a Microsoft 365 Purview techie
 ---
 
