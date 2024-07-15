@@ -6,7 +6,6 @@ date: 2024-04-19
 ![Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis](/assets/images/20240419-shinynewsystem.png)
 <center><figcaption>Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis</figcaption></center><br />
 
-
 In this short post, we’ll dive into the why and how of the upgrade to the V3 Unified Labeling client.
 
 The Unified Labeling client is software that has a long history amongst folks concerned with Data Security. Historically, organizations have deployed this to provide labeling functionality in the Microsoft Office productivity apps, add a scanner to classify unstructured data on file shares etc. and provide a PowerShell module. April 11th marked the day that we waived goodbye to the Office integration, and the release of the v3 client. 
@@ -25,7 +24,6 @@ The below timeline is based on the well-known ring deployment principle and assu
 
 ![Release schedule visualization - © Robbert Berghuis](/assets/images/20240419-releaseschedule.png)
 <center><figcaption>Release schedule visualization - © Robbert Berghuis</figcaption></center><br />
-
 
 ## Summary
 To wrap-up:
