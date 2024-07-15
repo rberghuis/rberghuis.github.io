@@ -36,8 +36,6 @@ To wrap-up:
 
 ## Relevant reading materials
 The below is a non-exhaustive list of additional reading materials
-[Retirement notification for the Azure Information Protection Unified Labeling add-in for Office | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908)
-
-[Azure Information Protection and the Information Protection Modernization Journey | Microsoft Community Hub](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070)
-
-[Microsoft Purview Information Protection client - Release management and supportability | Microsoft Learn](https://learn.microsoft.com/en-us/purview/information-protection-client-relnotes)
+- [Retirement notification for the Azure Information Protection Unified Labeling add-in for Office](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908)
+- [Azure Information Protection and the Information Protection Modernization Journey ](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070)
+- [Microsoft Purview Information Protection client - Release management and supportability](https://learn.microsoft.com/en-us/purview/information-protection-client-relnotes)
