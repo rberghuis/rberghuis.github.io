@@ -6,7 +6,6 @@ date: 2024-01-17
 ![Image illustrating Microsoft Productivity Apps, Copilot and Purview Sensitivity Labels - © Robbert Berghuis](/assets/images/20240117-microsoftproductivityappscopilotandlabels.png)
 <center><figcaption>Image illustrating Microsoft Productivity Apps, Copilot and Purview Sensitivity Labels - © Robbert Berghuis</figcaption></center><br />
 
-
 Many organizations are using Microsoft Purview Sensitivity labels to classify their unstructured data for quite a while now. Some organizations are also exploring Microsoft Copilot for Microsoft 365, but how do these two services work together? In this post I'm providing some of my own learnings on this topic from first-hand deployment experience and guidance on how to resolve some of the issues I've seen to date.
 
 **Update February 20, 2024**: Microsoft published an update at [Considerations for deploying Microsoft Purview data security and compliance protections for Microsoft Copilot | Microsoft Learn](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview-considerations) of which I want to highlight the following:
@@ -28,12 +27,10 @@ In comes Copilot for Microsoft 365 on which many people have blogged about, so l
 ![An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images/20240117-excelvsexcelonline.png)
 <center><figcaption> An image showing the difference between Excel desktop and Excel web, when using the Microsoft Unified Labeling add-in - © Robbert Berghuis</figcaption></center><br />
 
-
 - **Copilot for PowerPoint** works! Whenever you're in need of transforming a Word-document into a presentation, the highest label of the source documents is also applied to the resulting PowerPoint deck. This is called label inheritance (more can be found on Microsoft Learn) and works, however it isn't reflected in the add-in bar. It is shown correctly in the Ribbon underneath the Sensitivity button and upon saving and re-opening the presentation, the label is also correctly reflected in the add-in bar. 
 
 ![An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis](/assets/images/20240117-powerpoint.png)
 <center><figcaption>An image showing the label inheritance 'flaw' in PowerPoint when using the Microsoft Unified Labeling add-in - © Robbert Berghuis</figcaption></center><br />
-
 
 I can't speak on behalf of Microsoft but can probably share that in my conversations with the Microsoft Product Group they've been strongly advising to transition to the built-in labeling client. If you need more information on the retirement of the Microsoft Unified Labeling add-in, I'd suggest to read the following [Microsoft Tech Community publication](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908).
 
