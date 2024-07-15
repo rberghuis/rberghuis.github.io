@@ -66,12 +66,9 @@ We started with some of the pros and cons of having the transcript stored in the
 It also adds the technical capability to share the recording and transcript with **external users**. At the moment, it is uncertain what the Microsoft direction would be on this topic, and obviously organizations can control this through the SharePoint Online Sharing settings and Microsoft 365 Purview Data Loss Prevention (DLP). What makes this line of thinking interesting, is that this would potentially open the doors towards **cross-organizational Copilot interactions at the same Teams Meeting transcription** – which would be mind-blowing! Obviously these are just speculations, but I cannot wait to see what Microsoft has in store for us!
 
 ## Additional reading materials
-[Delete Exchange Online and OneDrive transcript files | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/delete-exchange-online-transcripts)
-
-[Teams meeting recording | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/meeting-recording)
-
-[Microsoft 365 internals explained: Microsoft Graph, substrate, and PowerShell with Jeffrey Snover | Microsoft Mechanics](https://www.youtube.com/watch?v=uuiTR8r27Os)
-
-[Microsoft Graph driveItem | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0)
+- [Delete Exchange Online and OneDrive transcript files](https://learn.microsoft.com/en-us/microsoftteams/delete-exchange-online-transcripts)
+- [Teams meeting recording](https://learn.microsoft.com/en-us/microsoftteams/meeting-recording)
+- [Microsoft 365 internals explained: Microsoft Graph, substrate, and PowerShell with Jeffrey Snover](https://www.youtube.com/watch?v=uuiTR8r27Os)
+- [Microsoft Graph driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0)
 
 Note - If you're interested in the message shown in parts of the Transcripts shown, then you can find the exact episode of [Darknet Diaries here on Spotify](https://open.spotify.com/episode/6nPX7nFtocIK4Yqz28jQQ8?si=d881e37ca5734cac). 
