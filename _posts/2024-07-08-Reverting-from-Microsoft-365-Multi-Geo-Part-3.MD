@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reverting from Microsoft 365 Multi-Geo Part 3 of 4"
+title: "Reverting from Microsoft 365 Multi-Geo Part 3/4"
 date: 2024-07-08
 description: "In this post we will explore moving inactive data and as reminder, this is data that a regular user can no longer access as it's kept in retention only. As opposed to data a user can access, which can be actively used or is sitting there consuming storage capacity whilst being redundant, obsolete or trivial."
 ---

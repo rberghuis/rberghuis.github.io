@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reverting from Microsoft 365 Multi-Geo Part 2 of 4"
+title: "Reverting from Microsoft 365 Multi-Geo Part 2/4"
 date: 2024-07-01
 description: "In this post will explore moving active data. As a reminder, this is data that a user can still access, as opposed to data only kept in soft-deleted mailboxes and SharePoint Online Preservation Hold Library etc. Active user mailboxes can also hold data a user cannot access such as Teams Chats that have been copied as part of a Compliance Retention policy to a part of the Recoverable Items Folder of the user mailbox"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reverting from Microsoft 365 Multi-Geo Part 4 of 4"
-date: 2024-07-08
+title: "Reverting from Microsoft 365 Multi-Geo Part 4/4"
+date: 2024-07-15
 description: "In this post we will explore validating the Purview Compliance retention policies are active on the moved objects. This is especially important when you have restored objects from an inactive state, as you do not want to inadvertently lose data because some background process did not properly apply your expected retention policy."
 ---
 

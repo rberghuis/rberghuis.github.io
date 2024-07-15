@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reverting from Microsoft 365 Multi-Geo Part 1 of 4"
+title: "Reverting from Microsoft 365 Multi-Geo Part 1/4"
 date: 2024-06-24
 description: "In this post we the WHY, HOW and WHAT you need to do whenever you're considering wind-down of Microsoft 365 Multi-Geo. In this series of articles, I’ll describe my learnings on a client that asked to decommission their Microsoft 365 Multi-Geo setup as preparation for returning to a true single-geo setup. In order to truly be ready, all data stored in their satellite regions needs to be cleared."
 ---
