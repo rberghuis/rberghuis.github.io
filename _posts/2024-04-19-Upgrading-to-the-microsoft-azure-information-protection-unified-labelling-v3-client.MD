@@ -4,7 +4,7 @@ date: 2024-04-19
 ---
 
 ![Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis](/assets/images/20240419-shinynewsystem.png)
-<center><figcaption>Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis</figcaption></center>
+<center><figcaption>Image created through Microsoft Copilot showing a shiny new system - © Robbert Berghuis</figcaption></center><br />
 
 
 In this short post, we’ll dive into the why and how of the upgrade to the V3 Unified Labeling client.
@@ -24,7 +24,7 @@ Migration steps are made available by Microsoft [here](https://learn.microsoft.c
 The below timeline is based on the well-known ring deployment principle and assumes the organization has 4 rings. It also uses an n+7 days principle I see across enterprises, based on the initial release of software in an attempt to avoid bugs.
 
 ![Release schedule visualization - © Robbert Berghuis](/assets/images/20240419-releaseschedule.png)
-<center><figcaption>Release schedule visualization - © Robbert Berghuis</figcaption></center>
+<center><figcaption>Release schedule visualization - © Robbert Berghuis</figcaption></center><br />
 
 
 ## Summary
