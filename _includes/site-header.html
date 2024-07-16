@@ -6,10 +6,10 @@
     {% assign page_refs = site.header_page_refs | default: default_refs %}
 
     {% if page.layout != 'home' %}
-      <a class="site-title" href="{{ "/" | absolute_url }}">Back to {{ site.title | escape }}</a>
+      <a class="site-title" href="{{ "/" | absolute_url }}">Back home<!--{{ site.title | escape }}--></a>
     {% endif %}
 
-    {% if page_refs %}
+    {% if page_refs != '' %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
