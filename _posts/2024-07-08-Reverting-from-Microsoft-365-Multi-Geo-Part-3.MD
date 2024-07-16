@@ -10,7 +10,7 @@ description: "In this post we will explore moving inactive data and as reminder,
 
 In this series of articles, I’ll describe my learnings on a client that asked to decommission their Microsoft 365 Multi-Geo setup as preparation for returning to a true single-geo setup. To truly be ready, all data stored in their satellite regions needs to be cleared. As they have legal requirements to keep certain data for a prolonged period of time, this meant moving data between regions, both active and inactive; the latter being kept in legal retention.
 
-If you missed the [first]() or [second]() article in this series, I'd highly recommend following the provided links! The first describes the why and a generic approach, and the second dives into active-data geo-moves.
+If you missed the [first](/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html) or [second](/2024/07/01/Reverting-from-Microsoft-365-Multi-Geo-Part-2.html) article in this series, I'd highly recommend following the provided links! The first describes the why and a generic approach, and the second dives into active-data geo-moves.
 
 In this article, we'll explore moving inactive data and as reminder, this is data that a regular user can no longer access as it's kept in retention only. As opposed to data a user can access, which can be actively used or is sitting there consuming storage capacity whilst being redundant, obsolete or trivial.
 
