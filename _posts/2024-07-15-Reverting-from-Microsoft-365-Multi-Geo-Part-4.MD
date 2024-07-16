@@ -10,7 +10,7 @@ description: "In this post we will explore validating the Purview Compliance ret
 
 In this series of articles, I will describe my learnings on a client that asked to decommission their Microsoft 365 Multi-Geo setup as preparation for returning to a true single-geo setup. To truly be ready, all data stored in their satellite regions needs to be cleared. As they have legal requirements to keep certain data for a prolonged period of time, this meant moving data between regions, both active and inactive; the latter being kept in legal retention.
 
-If you missed the [first](), [second]() or [third]() article in this series, I would highly recommend following the provided links! The first describes the why and a generic approach, the second dives into active-data geo-moves and the third explores moving inactive data across regions.
+If you missed the [first](/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html), [second](/2024/07/01/Reverting-from-Microsoft-365-Multi-Geo-Part-2.html) or [third](/2024/07/08/Reverting-from-Microsoft-365-Multi-Geo-Part-3.html) article in this series, I would highly recommend following the provided links! The first describes the why and a generic approach, the second dives into active-data geo-moves and the third explores moving inactive data across regions.
 
 In this article, we will explore validating the Purview Compliance retention policies are active on the moved objects. This is especially important when you have restored objects from an inactive state, as you do not want to inadvertently lose data because some background process did not properly apply your expected retention policy.
 
