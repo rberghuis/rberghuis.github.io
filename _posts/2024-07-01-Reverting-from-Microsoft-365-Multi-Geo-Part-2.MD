@@ -109,7 +109,7 @@ What is definitely different when compared against Exchange Online, is that Shar
 ### Initiating and validating a cross-region site move
 So, under the assumption you have done your due care and due diligence in ensuring you are change management colleagues have spread the word – you can do technical stuff again. There are three cmdlets you need to remember:
 
-- ```powershell Start-SPOSiteContentMove``` for non-Group connected sites
+- ```Start-SPOSiteContentMove``` for non-Group connected sites
 - ```Start-SPOUnifiedGroupMove``` for Group connected sites
 - ```Start-SPOUserAndContentMove``` for OneDrive for Business sites
 
