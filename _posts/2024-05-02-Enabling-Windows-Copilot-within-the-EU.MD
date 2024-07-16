@@ -2,7 +2,7 @@
 layout: post
 title: "Enabling Windows Copilot within the EU"
 date: 2024-05-02
-description: "UPDATED June 21st, 2024! In this post I'll share my findings on how to bypass the Country-level restrictions imposed by Microsoft that disables Windows Copilot. Next to how, I'm also sharing a PowerShell script that can help enable it for you!"
+description: "**UPDATED June 21st, 2024**! In this post I'll share my findings on how to bypass the Country-level restrictions imposed by Microsoft that disables Windows Copilot. Next to how, I'm also sharing a PowerShell script that can help enable it for you!"
 ---
 
 **2024-06-21 UPDATE** The Copilot for Windows icon is being moved to the System Tray (controlled feature release). Testing my earlier script revealed that 'enforcing' the icon to show now requires a restart of the Windows File Explorer - so alongside some new registry keys, I've just pushed a new version to the GitHub repository on my [GitHub repository](https://github.com/rberghuis/WindowsCopilot) - enjoy!
