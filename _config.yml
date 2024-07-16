@@ -1,4 +1,4 @@
-title: Robbert Berghuis personal blog
+title: Robbert Berghuis's personal blog
 description: Gibberish of a Microsoft 365 Purview techie
 show_downloads: false
 
@@ -15,7 +15,7 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: rberghuis
+author: Robbert Berghuis
 site:
   github.owner_name: rberghuis
   github.owner_url: https://github.com/rberghuis/
