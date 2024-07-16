@@ -71,7 +71,9 @@ Are there other options? Let your imagination run wild! I'm trying to persuade M
 
 What about Unified Groups that have been deleted from Entra ID, don't they have a mailbox component? They are just mailboxes of type GroupMailbox, so you should be able to find them quite easily using the Get-Mailbox like
 
-> Get-Mailbox -GroupMailbox -InactiveMailboxOnly -Filter $filter
+```powershell
+Get-Mailbox -GroupMailbox -InactiveMailboxOnly -Filter $filter
+```
 
 Unfortunately, the -GroupMailbox parameter is not yet supported in the Get-ExoMailbox cmdlet which is a shame considering that works way faster in the majority of cases. The Verb-Exo* cmdlets are based on REST API which amongst other benefits outperform their related legacy cmdlets, as such and when possible use Get-ExoMailbox over Get-Mailbox. For those that are unaware, well-formed cmdlets contain a Verb and a Noun, example: Get-ExoMailbox the verb is Get and the noun is ExoMailbox. 
 

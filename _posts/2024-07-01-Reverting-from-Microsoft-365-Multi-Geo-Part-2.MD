@@ -45,8 +45,11 @@ A quirky side note, I really like the use of $hitlist and $hit as variable names
 
 Now that you can find the mailboxes you want to move, you can issue changes to the Mailbox Region accordingly. Just ensure that whichever mailbox you target, you also update the Extension Attribute accordingly, so you can find it again. Maybe write something like ‘Moving’. When the object is synchronized and the region is 'mapped', update the authoritative source, and await the synchronization. If Entra ID is authoritative for the object you are targeting, then update through Update-MgUser and Update-MgGroup accordingly. Once the change has been made to update the Preferred Data Location and this differs from where the mailbox data is stored, then Exchange Online will automatically put the mailbox in the queue.
 
-> Update-MgUser  -UserId $hit -PreferredDataLocation 'EUR'
-> Update-MgGroup -GroupId $hit -PreferredDataLocation 'EUR'
+```powershell
+Update-MgUser  -UserId $hit -PreferredDataLocation 'EUR'
+
+Update-MgGroup -GroupId $hit -PreferredDataLocation 'EUR'
+```
 
 Once the move has been initiated, adjust the filter to fetch and then retrieve the mailboxes with a variety of properties. Using Get-ExoMailbox really helps speed things up, as it only retrieves a default limited set of properties alongside anything you specifically identify.
 
@@ -114,7 +117,9 @@ It is also worth noting that the changes to the Preferred Data Location need to 
 
 If you are targeting the same ‘Unified Group’ we processed in our Exchange Online topic earlier, this has a group-connected site in SharePoint Online. Assuming you have already updated the group within Exchange Online, you do not need to update the property in SharePoint Online (again) as this attribute is synchronized between the two platforms. However, it is recommended to wait 24 hours for the internal SharePoint Online synchronizes. After that, just kick-off the migration with:
 
-> Start-SPOUnifiedGroupMove -GroupAlias $hit -DestinationDataLocation "EUR"
+```powershell
+Start-SPOUnifiedGroupMove -GroupAlias $hit -DestinationDataLocation "EUR"
+```
 
 The migration itself has four steps, of which the third step takes the longest. You can retrieve the move-status through Get-SPOUnifiedGroupState for Group connected sites, and you are unsurprisingly Get-SPOSiteContentMoveState is for non-Group connected sites etc.
 

@@ -41,7 +41,9 @@ Okay, you claim something does not work and now you are going to add additional 
 
 The trick of reading the retention policies is fetching them through the following cmdlet.
 
-> Export-MailboxDiagnosticLogs -ComponentName HoldTracking -Identity $hit
+```powershell
+Export-MailboxDiagnosticLogs -ComponentName HoldTracking -Identity $hit
+```
 
 This gives you a JSON-formatted string which translates to a list of objects for which one the properties is a GUID. This GUID can be translated back to the Retention Compliance Policy and will obviously require some minor string modifications. 
 
@@ -58,7 +60,9 @@ That is it for Exchange Online, and with Group Mailboxes (or Unified Groups) we 
 ## SharePoint Online
 It is no surprise that SharePoint Online is way too complicated again. There is a Microsoft internal tool that would allow you to list the Retention Policies applied onto a SharePoint site using the cmdlet Get-TenantSPSiteHoldInfoV2. However, being an internal-only tool - you cannot have it 😊 This is as much as I can share about it.
 
-> Get-TenantSPSiteHoldInfov2 -TenantId $id -SiteURL $url
+```powershell
+Get-TenantSPSiteHoldInfov2 -TenantId $id -SiteURL $url
+```
 
 As not everyone has access to the Microsoft internal tools, we need to find another way to accomplish this. So what are our options? We have already seen that the Purview Compliance portal just does an 'include/exclude' look-up of policies applied, so that is not 100% trustworthy. Is there an alternative? There are at least two methods I have seen so far that would sort-of fulfill your needs, but the challenge is scale again. Both are fine if you are only validating a handful of sites, but everything beyond 10 sites is tedious and everything above 100 sites is simply impossible.
 
