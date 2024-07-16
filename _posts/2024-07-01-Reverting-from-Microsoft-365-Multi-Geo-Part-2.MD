@@ -76,7 +76,7 @@ I almost hear you thinking, is this worth describing? Nah, not really. Would I c
 - **ID** - Some ID of the mailbox location object, an auto-expanded archive can have multipl- AuxArchives accordingly, but this number (then) does not increase. Maybe 1 is a Boolean fo- 'available' and 0 being not available but is attached/affiliated to the object?
 - **Mailbox GUID** - GUID of the mailbox location object
 - **Mailbox Type** - Mailbox type, can be Primary, Main Archive, Aux Archive, etc.
-- **Exchange Online FQDN** - Assumption, this is the FQDN of the Exchange Online Databas- **Availability Group (DAG) or the load balancer
+- **Exchange Online FQDN** - Assumption, this is the FQDN of the Exchange Online Database Availability Group (DAG) or the load balancer
 - **Exchange Online GUID** - Assumption, this is the GUID of the database hosted on the DAG
 
 Dissecting this will allow you to confirm if all mailbox databases attached to the object reside in the expected mailbox region. When that does not match, the move has not yet been completed. Just a reminder, the code for this can be found on the [GitHub repository](https://github.com/rberghuis/M365MultiGeo).
@@ -109,9 +109,9 @@ What is definitely different when compared against Exchange Online, is that Shar
 ### Initiating and validating a cross-region site move
 So, under the assumption you have done your due care and due diligence in ensuring you are change management colleagues have spread the word – you can do technical stuff again. There are three cmdlets you need to remember:
 
-- *Start-SPOSiteContentMove* for non-Group connected sites
-- *Start-SPOUnifiedGroupMove* for Group connected sites
-- *Start-SPOUserAndContentMove* for OneDrive for Business sites
+- ```powershell Start-SPOSiteContentMove``` for non-Group connected sites
+- ```Start-SPOUnifiedGroupMove``` for Group connected sites
+- ```Start-SPOUserAndContentMove``` for OneDrive for Business sites
 
 It is also worth noting that the changes to the Preferred Data Location need to synchronize across the estate. It is best practice to wait at least 24 hours before committing changes in SharePoint Online.
 
