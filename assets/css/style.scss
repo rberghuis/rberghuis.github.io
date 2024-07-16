@@ -46,5 +46,8 @@ img {
 
 .vertical-align {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+    line-height: 19px;
+    margin-top: 5px;
+    float: right;
 }
