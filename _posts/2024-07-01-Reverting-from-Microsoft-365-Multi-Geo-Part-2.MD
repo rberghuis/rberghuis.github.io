@@ -11,7 +11,7 @@ description: "In this post will explore moving active data. As a reminder, this 
 In this series of articles, I will describe my learnings on a client that asked to decommission their Microsoft 365 Multi-Geo setup as preparation for returning to a true single-geo setup. To truly be ready, all data stored in their satellite regions needs to be cleared. My client has legal requirements to keep certain data for a prolonged period of time, this meant moving data between regions, both active and inactive; the latter being kept in legal retention.
 
  
-If you missed the [first]({{ '/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html' | absolute_url }}) article in this series, I would highly recommend following the link and start at the beginning. It describes the why and provides a generic approach.
+If you missed the [first]({{ '/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html' | absolute_url }}){:class="plausible-event-name=Post+Internal"} article in this series, I would highly recommend following the link and start at the beginning. It describes the why and provides a generic approach.
 
 In this article, we will explore moving active data. As a reminder, this is data that a user can still access, as opposed to data only kept in soft-deleted mailboxes and SharePoint Online Preservation Hold Library etc. Active user mailboxes can also hold data a user cannot access such as Teams Chats that have been copied as part of a Compliance Retention policy to a part of the Recoverable Items Folder of the user mailbox.
 
@@ -19,7 +19,7 @@ Moving active data is probably the easiest, as an admin can (still) manage the P
 
 How you manage this attribute depends on your setup. If you manage it on-premises and have ‘mapped’ the attribute accordingly within “Entra ID Connect” or “Entra Connect Sync”, then obviously you need to update the authoritative source.
 
-Disclaimer! Any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo). It makes little sense in showing stuff without providing parts of the code, and then requiring you to type it over into your favorite IDE. 
+Disclaimer! Any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo){:class="plausible-event-name=Post+External+GitHub+rberghuis+M365MultiGeo"}. It makes little sense in showing stuff without providing parts of the code, and then requiring you to type it over into your favorite IDE. 
 
 ## Exchange Online
 Exchange Online mailboxes are moved automatically whenever the Preferred Data Location attribute is changed. Within Exchange Online, the MailboxRegion property is used to specify the Preferred Data Location. Whenever the database geolocation no longer matches the MailboxRegion value, the mailbox in question is put into a relocation queue which will process the geo-move accordingly.
@@ -79,7 +79,7 @@ I almost hear you thinking, is this worth describing? Nah, not really. Would I c
 - **Exchange Online FQDN** - Assumption, this is the FQDN of the Exchange Online Database Availability Group (DAG) or the load balancer
 - **Exchange Online GUID** - Assumption, this is the GUID of the database hosted on the DAG
 
-Dissecting this will allow you to confirm if all mailbox databases attached to the object reside in the expected mailbox region. When that does not match, the move has not yet been completed. Just a reminder, the code for this can be found on the [GitHub repository](https://github.com/rberghuis/M365MultiGeo).
+Dissecting this will allow you to confirm if all mailbox databases attached to the object reside in the expected mailbox region. When that does not match, the move has not yet been completed. Just a reminder, the code for this can be found on the [GitHub repository](https://github.com/rberghuis/M365MultiGeo){:class="plausible-event-name=Post+External+GitHub+rberghuis+M365MultiGeo"}.
 
 ![PowerShell showing the list of all databases used, for all mailboxes - © Robbert Berghuis](/assets/images/20240701-PowerShell-List-all-regions.png)
 <figcaption>PowerShell showing the list of all databases used, for all mailboxes - © Robbert Berghuis</figcaption>

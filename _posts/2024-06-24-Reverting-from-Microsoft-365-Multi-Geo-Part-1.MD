@@ -15,7 +15,7 @@ Before we’re kicking off - yes, my client understands that moving data between
 ## Why would you do such a thing?
 Before diving into the technical stuff, a quick step back into the why. Initially there is no reason to move data between regions as the tenant remains in the Microsoft 365 Multi-Geo 'forest'. Only when you’re actively moving back to a single-geo setup, you need to move data out of your satellite locations back to your main data location.
 
-So why? Easily said, it has something to do with the EU & EFTA Data Boundary. My client wants to move back to the “EU Forest” to ‘leverage’ the restrictions of the EU & EFTA Data Boundary accordingly as this helps them meet certain requirements going forward. [The documentation](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn) clearly states as much:
+So why? Easily said, it has something to do with the EU & EFTA Data Boundary. My client wants to move back to the “EU Forest” to ‘leverage’ the restrictions of the EU & EFTA Data Boundary accordingly as this helps them meet certain requirements going forward. [The documentation](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn){:class="plausible-event-name=Post+External+Microsoft+Learn"} clearly states as much:
 
 > Customers who have purchased Multi-Geo Capabilities are not in scope for the EU Data Boundary even if their tenant is listed as being in a country or region in the EU or EFTA. 
 

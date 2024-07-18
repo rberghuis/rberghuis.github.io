@@ -10,11 +10,11 @@ description: "In this post we will explore validating the Purview Compliance ret
 
 In this series of articles, I will describe my learnings on a client that asked to decommission their Microsoft 365 Multi-Geo setup as preparation for returning to a true single-geo setup. To truly be ready, all data stored in their satellite regions needs to be cleared. As they have legal requirements to keep certain data for a prolonged period of time, this meant moving data between regions, both active and inactive; the latter being kept in legal retention.
 
-If you missed the [first]({{ '/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html' | absolute_url }}), [second]({{ '/2024/07/01/Reverting-from-Microsoft-365-Multi-Geo-Part-2.html' | absolute_url }}) or [third]({{ '/2024/07/08/Reverting-from-Microsoft-365-Multi-Geo-Part-3.html' | absolute_url }}) article in this series, I would highly recommend following the provided links! The first describes the why and a generic approach, the second dives into active-data geo-moves and the third explores moving inactive data across regions.
+If you missed the [first]({{ '/2024/06/24/Reverting-from-Microsoft-365-Multi-Geo-Part-1.html' | absolute_url }}){:class="plausible-event-name=Post+Internal+Post"}, [second]({{ '/2024/07/01/Reverting-from-Microsoft-365-Multi-Geo-Part-2.html' | absolute_url }}){:class="plausible-event-name=Post+Internal+Post"} or [third]({{ '/2024/07/08/Reverting-from-Microsoft-365-Multi-Geo-Part-3.html' | absolute_url }}){:class="plausible-event-name=Post+Internal+Post"} article in this series, I would highly recommend following the provided links! The first describes the why and a generic approach, the second dives into active-data geo-moves and the third explores moving inactive data across regions.
 
 In this article, we will explore validating the Purview Compliance retention policies are active on the moved objects. This is especially important when you have restored objects from an inactive state, as you do not want to inadvertently lose data because some background process did not properly apply your expected retention policy.
 
-Disclaimer! Any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo). It makes little sense in showing stuff without providing parts of the code, and then requiring you to type it over into your favorite IDE. 
+Disclaimer! Any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo){:class="plausible-event-name=Post+External+GitHub+rberghuis+M365MultiGeo"}. It makes little sense in showing stuff without providing parts of the code, and then requiring you to type it over into your favorite IDE. 
 
 ##  Microsoft Purview Compliance portal
 Obviously, the first step is to confirm the policies you are expecting are at least found when using the Policy Lookup tool found in the Purview Compliance portal. This provides you a quick overview on the policies where the concerning object is in-scope. 
@@ -78,7 +78,7 @@ When you have a list of sites, you can call the API in bulk to fetch the details
 ![Leveraging in the API through PowerShell to fetch the "Is Deletable" value - Robbert Berghuis - © Robbert Berghuis](/assets/images/20240715-SharePoint-Online-API.png)
 <figcaption>Leveraging in the API through PowerShell to fetch the "Is Deletable" value - Robbert Berghuis - © Robbert Berghuis</figcaption>
 
-The second option is to leverage the native [Microsoft Support diagnostic tooling](https://aka.ms/PillarInvalidRetention), which will list the applicable retention policies. I am not entirely sure if this is just a Purview Compliance policy look-up, or something checked within SharePoint Online itself.
+The second option is to leverage the native [Microsoft Support diagnostic tooling](https://aka.ms/PillarInvalidRetention){:class="plausible-event-name=Post+External+Microsoft+Support"}, which will list the applicable retention policies. I am not entirely sure if this is just a Purview Compliance policy look-up, or something checked within SharePoint Online itself.
 
 ![SharePoint Online Diagnostics through Microsoft Support- © Robbert Berghuis](/assets/images/20240715-Microsoft-Support-Diagnostic.png)
 <figcaption>SharePoint Online Diagnostics through Microsoft Support - © Robbert Berghuis</figcaption>
@@ -105,4 +105,4 @@ I also want to repeat that this is not a manual, but just some of my learnings t
 ## Closing words
 That is all folks. I hope the articles provided you with valuable insights, tools to run through multi-geo moves and Purview Compliance policy retention validation, or both and more. As always, I appreciate any and all feedback and insights you might have.
 
-As a reminder, any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo). 
+As a reminder, any and all code is provided on an as-is basis, without warranty of any kind and can be found on my [GitHub repository](https://github.com/rberghuis/M365MultiGeo){:class="plausible-event-name=Post+External+GitHub+rberghuis+M365MultiGeo"}. 
