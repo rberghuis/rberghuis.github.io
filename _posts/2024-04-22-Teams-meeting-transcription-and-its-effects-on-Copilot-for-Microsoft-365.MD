@@ -15,7 +15,7 @@ As not everything has reached General Availability (GA) yet, some features descr
 ## Walk before we run, what do we know today?
 Before diving into what will change, we need to be aligned on the current situation. So, let us start from the top. Before the change is implemented, Microsoft Teams Meeting transcripts are stored on Exchange Online, within the mailbox of the organizer. When it is a Teams Channel meeting, then it is stored in the (unified) group mailbox that is attached to the team. For ease of reading, the rest of this post will work based on a "regular” Teams meeting. The transcripts are stored in an Application Folder known by its GUID 93c8660e-1330-4e40-8fda-fd27f9eafe10 that references the so called MeetingIntelligenceApp charged with storing the transcripts in the mailbox.
 
-Using common support tools such as [MFCMAPI](https://microsoft.github.io/mfcmapi/){:class="plausible-event-name=Post+External+GitHub+Mirosoft"} you can dive into the mailbox and list the "folders". Within that "folder" you will find the MeetingTranscriptCollection and the individual Meeting Transcripts stored within.
+Using common support tools such as [MFCMAPI](https://microsoft.github.io/mfcmapi/){:class="plausible-event-name=Post+External+GitHub+Microsoft+MFCMapi"} you can dive into the mailbox and list the "folders". Within that "folder" you will find the MeetingTranscriptCollection and the individual Meeting Transcripts stored within.
 
 ![View on the Meeting Transcript Collection using MFCMAPI - © Robbert Berghuis](/assets/images/20240422-MeetingTranscriptCollectionMFCMAPI.png)
 <figcaption>View on the Meeting Transcript Collection using MFCMAPI - © Robbert Berghuis</figcaption>
