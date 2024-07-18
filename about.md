@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-tagline: Gibberish of a Microsoft 365 Purview techie
+title: About Me
+tagline: Robbert Berghuis
 permalink: /about.html
 ref: about
 order: 0
