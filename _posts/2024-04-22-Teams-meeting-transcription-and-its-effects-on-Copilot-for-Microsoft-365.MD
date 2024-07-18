@@ -45,12 +45,12 @@ The full ‘Download Transcript’-call references a child object called ‘Medi
 ![Microsoft Graph Explorer view on the "Media"-child object - © Robbert Berghuis](/assets/images/20240422-GraphExplorerViewMedia.png)
 <figcaption>Microsoft Graph Explorer view on the "Media"-child object - © Robbert Berghuis</figcaption>
 
-The next step would be to try and access Transcripts, but unfortunately that fails. It could be that the endpoint is not directly accessible through Graph Explorer, or that I am simply missing the permissions. There are supported ways to fetch [Meeting Transcripts using the Microsoft Graph](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0&tabs=http), but I will leave it at this.
+The next step would be to try and access Transcripts, but unfortunately that fails. It could be that the endpoint is not directly accessible through Graph Explorer, or that I am simply missing the permissions. There are supported ways to fetch [Meeting Transcripts using the Microsoft Graph](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0&tabs=http){:class="plausible-event-name=Post+External+Microsoft+Learn"}, but I will leave it at this.
 
 ## Cool! But what is the relationship with Copilot for Microsoft 365?
 Microsoft will implement the change and one the things that inspired this blog is the use of Microsoft Teams **Intelligent Meeting Recap**, an added benefit when users have a Copilot for Microsoft 365 license. What?! Yes, that is right – you do not need Teams Premium to use the Intelligent Meeting Recap feature as it is included in the Copilot for Microsoft 365 license. This is a really cool benefit, but still currently requires the meeting to be recorded & transcribed. In my tests using the newer ‘Store Transcript on OneDrive for Business’ feature, users can benefit from Intelligent Meeting Recap without recording the meeting. It only needs to be transcribed – how cool is that!
 
-So how does this flow look like? An amazingly oversimplified representation of this is shown below, with all credits for the advanced view on this going to [Mitchell Bakker](https://www.linkedin.com/in/mitchelljoshuabakker/){:class="plausible-event-name=Post+External+LinkedIn+mitchelljoshuabakker"} one of my valued colleagues and overall Teams Guru!
+So how does this flow look like? An amazingly oversimplified representation of this is shown below, with all credits for the advanced view on this going to [Mitchell Bakker](https://www.linkedin.com/in/mitchelljoshuabakker/){:class="plausible-event-name=Post+External+LinkedIn+Other"} one of my valued colleagues and overall Teams Guru!
 
 ![Teams Meeting transcription process and storage with Copilot for Microsoft 365 interactions - © Mitchell Bakker ](/assets/images/20240422-TranscriptFlow.png)
 <figcaption>Teams Meeting transcription process and storage with Copilot for Microsoft 365 interactions - © Mitchell Bakker </figcaption>
@@ -70,7 +70,7 @@ It also adds the technical capability to share the recording and transcript with
 ## Additional reading materials
 - [Delete Exchange Online and OneDrive transcript files](https://learn.microsoft.com/en-us/microsoftteams/delete-exchange-online-transcripts)
 - [Teams meeting recording](https://learn.microsoft.com/en-us/microsoftteams/meeting-recording){:class="plausible-event-name=Post+External+Microsoft+Learn"}
-- [Microsoft 365 internals explained: Microsoft Graph, substrate, and PowerShell with Jeffrey Snover](https://www.youtube.com/watch?v=uuiTR8r27Os){:class="plausible-event-name=Post+External+Youtube+MicrosoftInternals"}
+- [Microsoft 365 internals explained: Microsoft Graph, substrate, and PowerShell with Jeffrey Snover](https://www.youtube.com/watch?v=uuiTR8r27Os){:class="plausible-event-name=Post+External+Youtube"}
 - [Microsoft Graph driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0){:class="plausible-event-name=Post+External+Microsoft+Learn"}
 
-Note - If you're interested in the message shown in parts of the Transcripts shown, then you can find the exact episode of [Darknet Diaries here on Spotify](https://open.spotify.com/episode/6nPX7nFtocIK4Yqz28jQQ8?si=d881e37ca5734cac){:class="plausible-event-name=Post+External+Spotify+DarknetDiaries"}. 
+Note - If you're interested in the message shown in parts of the Transcripts shown, then you can find the exact episode of [Darknet Diaries here on Spotify](https://open.spotify.com/episode/6nPX7nFtocIK4Yqz28jQQ8?si=d881e37ca5734cac){:class="plausible-event-name=Post+External+Spotify"}. 
