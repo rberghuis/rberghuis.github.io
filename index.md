@@ -10,6 +10,8 @@ layout: home
 
 Hey 👋
 
+I've moved to [Substack](https://copilotatwork.substack.com/), find me there!
+
 Thanks for stopping by! You've reached my personal blog where I share a variety of gibberish 😊. 
 
 Read more [about me]({{ '/about.html' | absolute_url }}), or dive straight into the posts below!
