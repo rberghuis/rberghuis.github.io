@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Microsoft 365 Copilot Custom Instruction set"
+title: "Custom Instruction Set"
 date: 2025-09-03
-description: "Testing custom instruction sets published on the internet"
+description: "Detailed configuration and preferences for assistant behavior."
+permalink: /custom-instruction-set.html
+robots: index, follow
 ---
 
 # 1. Communication Style
