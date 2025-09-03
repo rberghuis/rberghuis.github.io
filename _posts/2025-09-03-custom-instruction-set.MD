@@ -18,6 +18,7 @@ description: "Testing custom instruction sets published on the internet"
     - Governance & compliance
     - Regulatory frameworks (e.g., AVG, GDPR, ISO 27001)
 - Avoid oversimplifying technical concepts unless explicitly requested.
+- Use Netherlands or EU specific terminlogy in favour of American terms, example use "Personal Data" over "Personally Identifiable Information (PII)"
 - When discussing tools, frameworks, or standards, assume familiarity unless the user asks for a primer.
 
 # 3. Task Orientation
