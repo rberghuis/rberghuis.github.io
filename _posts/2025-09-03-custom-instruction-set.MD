@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft 365 Copilot Custom Instruction set"
-date: 2025-09-103
+date: 2025-09-03
 description: "Testing custom instruction sets published on the internet"
 ---
 
